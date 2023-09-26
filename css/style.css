@@ -3,16 +3,20 @@
 
 /* Var */
 :root {
-  --c-brand: #f83691;
+  /* --c-brand: #f83691; */
+  --c-brand: blue;
   --c-brand-rgb: 248, 54, 145;
-  --c-dark: #303050;
+  /* --c-dark: #303050; */
+  --c-dark: white;
   --c-body: #636383;
+  /* --c-body: white; */
+
   --f-main: "Bai Jamjuree", sans-serif;
   --transition: all 0.6s cubic-bezeir(0.165, 0.84, 0.44, 1);
   --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* CSS Reset */
+/* CSS Reset and helper*/
 body {
   font-family: var(--f-main);
   color: var(--c-body);
@@ -54,6 +58,10 @@ img {
   padding-bottom: 120px;
 }
 
+.text-brand {
+  color: var(--c-brand);
+}
+
 /* Navbar */
 .navbar {
   padding-top: 30px;
@@ -80,4 +88,32 @@ img {
   font-size: 24px;
   font-weight: 700;
   color: var(--c-dark);
+}
+
+/* Button */
+.btn {
+  padding: 10px 24px;
+  border-radius: 0;
+  border-width: 2px;
+  font-weight: 500;
+}
+
+.btn-brand,
+.btn-brand:focus {
+  background-color: var(--c-brand);
+  color: white;
+  border-color: var(--c-brand);
+}
+
+.btn-brand:hover {
+  background-color: transparent;
+  color: var(--c-brand);
+  border-color: var(--c-brand);
+}
+
+/* Home section */
+#home {
+  background-image: url(../images/hero.jpg);
+  background-position: center;
+  background-size: cover;
 }
