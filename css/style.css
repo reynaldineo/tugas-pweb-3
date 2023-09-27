@@ -102,6 +102,14 @@ img {
   box-shadow: var(--shadow);
 }
 
+.navbar-toggler {
+  border-radius: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 16px;
@@ -124,6 +132,22 @@ img {
   font-size: 24px;
   font-weight: 700;
   color: var(--c-dark);
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: var(--c-brand);
+  color: white;
+  border: 2px solid var(--c-brand);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+}
+
+.social-icon:hover {
+  background-color: transparent;
 }
 
 /* Button */
@@ -221,4 +245,50 @@ img {
 
 .website:hover img {
   transform: translateY(-100%);
+}
+
+/* Contact */
+#contact .form-control {
+  border-radius: 0;
+}
+
+#contact .form-control:focus {
+  box-shadow: none;
+  border-color: var(--c-brand);
+}
+
+#contact input.form-control {
+  height: 44px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--c-dark);
+  padding-top: 80px;
+}
+
+footer h4,
+footer h4 a {
+  color: white;
+}
+
+footer p,
+footer li,
+footer li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-top {
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
