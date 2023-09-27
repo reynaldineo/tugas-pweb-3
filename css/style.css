@@ -195,6 +195,7 @@ img {
 
 .about__description {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .about_flex {
@@ -206,6 +207,10 @@ img {
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+.about__image img {
+  width: 300px;
 }
 
 .about__blob {
@@ -276,6 +281,8 @@ img {
 .website img,
 .website .content {
   transition: var(--transition);
+  /* width: 500px; */
+  height: 350px;
 }
 
 .website:hover .content {
@@ -284,6 +291,10 @@ img {
 
 .website:hover img {
   transform: translateY(-100%);
+}
+
+.web-align {
+  justify-content: center;
 }
 
 /* Contact */
