@@ -6,8 +6,8 @@
   /* --c-brand: #f83691; */
   --c-brand: blue;
   --c-brand-rgb: 248, 54, 145;
-  /* --c-dark: #303050; */
-  --c-dark: white;
+  --c-dark: #303050;
+  --c-light: white;
   --c-body: #636383;
   /* --c-body: white; */
 
@@ -62,10 +62,43 @@ img {
   color: var(--c-brand);
 }
 
+.section-title {
+  max-width: 560px;
+  margin: 0 auto 60px auto;
+}
+
+.section-title .line {
+  width: 60px;
+  height: 2px;
+  background-color: var(--c-brand);
+  display: inline-block;
+}
+
+.section-connector {
+  position: relative;
+}
+
+.section-connector::after {
+  content: "";
+  width: 2px;
+  height: 100px;
+  background-color: var(--c-brand);
+  position: absolute;
+  top: -50px;
+  left: 50%;
+}
+
 /* Navbar */
 .navbar {
   padding-top: 30px;
   padding-bottom: 30px;
+  transition: var(--transition);
+}
+
+.navbar.scrolled {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: var(--c-brand);
 }
 
 @media (min-width: 992px) {
@@ -116,4 +149,42 @@ img {
   background-image: url(../images/hero.jpg);
   background-position: center;
   background-size: cover;
+}
+
+/* Services */
+.services-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--c-brand);
+  color: white;
+  font-size: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.custom-link span {
+  font-weight: 700;
+}
+
+.custom-link i {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-brand);
+  border-radius: 100px;
+  color: white;
+  margin-left: 6px;
+  transition: var(--transition);
+}
+
+.custom-link:hover i {
+  transform: translateX(6px);
 }
