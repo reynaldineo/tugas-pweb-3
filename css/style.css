@@ -184,6 +184,39 @@ img {
   color: aliceblue;
 }
 
+/* About */
+.about__container {
+  row-gap: 2.5rem;
+}
+
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: 2rem;
+}
+
+.about_flex {
+  display: flex;
+}
+
+.about__image {
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.about__blob {
+  width: 20rem;
+}
+
+.about__blob path {
+  stroke: var(--c-brand);
+  /* fill: var(--first-color); */
+}
+
 /* Services */
 .services-icon {
   width: 60px;
