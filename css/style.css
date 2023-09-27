@@ -198,6 +198,10 @@ img {
   text-align: justify;
 }
 
+.about__description span {
+  color: var(--c-brand);
+}
+
 .about_flex {
   display: flex;
 }
